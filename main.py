@@ -33,8 +33,9 @@ def noteprint():
     
 
 
-while True:
-    choice = menu()
+def run():
+    while True:
+        choice = menu()
     if choice == '1':
         note_create()
     elif choice == '2':
@@ -42,7 +43,8 @@ while True:
     elif choice == '3':
         exit()
     else:
-            print('invalid input')    
+        print('invalid input')    
     
     
-__name__ == '__main__'
+if __name__ == '__main__': 
+    run()
